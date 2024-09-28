@@ -1,28 +1,26 @@
 # main.py
-from calc import calculate
+from calc import Calculator
 
 def main():
+    calc = Calculator()
+    
+    print("Welcome to the Basic Calculator!")
+    print("Available operations: +, -, *, /")
+    
     while True:
         try:
-            num1 = float(input("Enter the first number: "))
-            operation = input("Type which operation (+, -, *, /): ")
+            num1 = float(input("Enter the first number (or type 'exit' to quit): "))
             num2 = float(input("Enter the second number: "))
+            operation = input("Type the operation (+, -, *, /): ")
 
-            result = calculate(num1, num2, operation)
+            result = calc.calculate(num1, num2, operation)
 
             if result is not None:
-                print(f"The result is: {result}")
-
-            # Ask if the user wants to perform another calculation
-            another_calculation = input("Do you want to perform another calculation? (yes/no): ").strip().lower()
-            if another_calculation != "yes":
-                print("Exiting the calculator. Goodbye!")
-                break
-
+                print(f"The result of {num1} {operation} {num2} is: {result}")
         except ValueError:
-            print("Error: Please enter valid numerical values.")
+            print("Error: Please enter a valid number.")
         except KeyboardInterrupt:
-            print("\nWarning: Got interrupted. Exiting program.")
+            print("\nExiting the calculator. Goodbye!")
             break
 
 if __name__ == "__main__":
