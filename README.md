@@ -1,28 +1,34 @@
 # Python-3.12.6-Calc-Open
 
-## Description
-The main file for this calculator project is `calc.py`, located in the function folder. This file contains all the essential functions for performing basic mathematical operations such as addition, subtraction, multiplication, and division.
+## Overview
+The `calc.py` file contains a basic math calculator implemented as a class. It provides functions for performing basic mathematical operations: addition, subtraction, multiplication, and division. 
 
-## Functionality
-- **Basic Operations**: 
-  - Addition (`+`)
-  - Subtraction (`-`)
-  - Multiplication (`*`)
-  - Division (`/`) with error handling for division by zero
+This calculator is designed to be simple and easy to use, suitable for educational purposes or quick calculations. The main file is located in the function folder, and it can be utilized by importing it into your projects.
 
-## Future Plans
-In future updates, we plan to refactor the current structure into a class-based format. This change will provide:
-- **Easier Access**: Users will be able to create instances of the calculator class, making the interface more intuitive.
-- **Enhanced Features**: Additional functionalities can be easily added as methods to the class.
+## Features
+- **Basic Operations**: Perform addition, subtraction, multiplication, and division with ease.
+- **Defensive Programming**: The implementation includes error handling to manage invalid inputs and unexpected errors.
+- **Flexible Usage**: Use the individual methods for straightforward operations, or utilize the `calculate` method for more complex calculations.
 
-## Note
-This calculator is designed with beginners in mind. It is not limited to juniors or those who might not want to create their own calculator from scratch. It serves as a helpful tool for anyone looking for a straightforward way to perform basic calculations.
+### Calculator Structure
+- **Primary Methods**: 
+  - `add(num1, num2)`: Adds two numbers.
+  - `subtract(num1, num2)`: Subtracts the second number from the first.
+  - `multiply(num1, num2)`: Multiplies two numbers.
+  - `divide(num1, num2)`: Divides the first number by the second (with error handling for division by zero).
 
-## Accessing the Project
-You can find the `usage` folder in your CALC folder, which contains working samples to help you understand how to use the calculator effectively.
+- **Secondary Method**:
+  - `calculate(num1, num2, operation)`: A more flexible method for performing operations based on a string input representing the operation type.
 
 ## Usage
-To use the calculator, run the `calc.py` file with Python 3.12.6:
+You can access the `usage` folder to see a working sample of how to use the calculator. This sample demonstrates the various operations supported by the `calc.py` file.
 
-```bash
-python calc.py
+In future updates, we plan to further enhance the functionality by integrating a user-friendly interface.
+
+## Future Development
+In future updates, we will make a class for easier access and interaction with the calculator's features.
+
+## License
+This project is open-source and adheres to open-source laws. For more information about open-source licenses, you can refer to the [Open Source Initiative](https://opensource.org/licenses).
+
+Feel free to contribute and share your improvements!
